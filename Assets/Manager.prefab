@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3697371477878981937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3697371477878981934}
+  - component: {fileID: 3697371477878981935}
+  - component: {fileID: 3697371477878981933}
+  - component: {fileID: 3697371477878981932}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3697371477878981934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697371477878981937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3697371477878981935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697371477878981937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290a9799a66d949bab836ac4bdb00d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  top: {fileID: 0}
+  Text: {fileID: 0}
+  Text2: {fileID: 0}
+  speed: 5
+  ad: 
+  minSwipeLength: 2
+  maxSwipeLength: 25
+  playerselect: {fileID: 0}
+  nick: {fileID: 0}
+  radius: 0
+  ani1: {fileID: 0}
+  ani2: {fileID: 0}
+  ani3: {fileID: 0}
+  movetime: 0.6
+  vs: {fileID: 0}
+--- !u!114 &3697371477878981933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697371477878981937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d4166311573024cadbe611dee56a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: ca-app-pub-9830950306066848/5667205514
+--- !u!114 &3697371477878981932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697371477878981937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605cefeb5c6aedd4c9fc8bf7b60766f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showTestAds: 0
+  admobAppId: ca-app-pub-9830950306066848~8229542252
+  admobBannerId: ca-app-pub-9830950306066848/5667205514
+  admobIntersititialId: ca-app-pub-9830950306066848/1589764672
+  admobRewardedId: 
+  bannerSize: 2
+  bannerPosition: 1
