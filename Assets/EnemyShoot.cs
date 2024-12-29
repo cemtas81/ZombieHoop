@@ -83,10 +83,10 @@ public class EnemyShoot : MonoBehaviour
         Vector2 _velocity = currentSwipe * speed;
         if (_velocity.magnitude >= maxSwipeLength)
         {
-            topRigid.velocity = new Vector2(_velocity.x , 0);
+            topRigid.linearVelocity = new Vector2(_velocity.x , 0);
         }
         else
-        topRigid.velocity = _velocity;
+        topRigid.linearVelocity = _velocity;
 
       
         //flame.SetActive(true);

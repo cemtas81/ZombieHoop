@@ -27,7 +27,7 @@ public class ZombieMove : MonoBehaviour
         }
         else
         {
-            rigid.velocity = Vector2.zero;
+            rigid.linearVelocity = Vector2.zero;
         }
     }
     private void Update()

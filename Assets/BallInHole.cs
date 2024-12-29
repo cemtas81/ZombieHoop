@@ -18,7 +18,7 @@ public class BallInHole : MonoBehaviour
     {
         if (collision.gameObject==ball)
         {
-            rig.velocity = Vector2.zero;
+            rig.linearVelocity = Vector2.zero;
             ball.transform.position = delik.position;
         }
         if (collision.gameObject==eight)

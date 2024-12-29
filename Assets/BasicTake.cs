@@ -88,7 +88,7 @@ public class BasicTake : MonoBehaviour
             currentSwipe = new Vector2(secondClickPos.x - firstClickPos.x, secondClickPos.y - firstClickPos.y);
             //topRigid.AddForce(Vector2.MoveTowards(top.transform.position, currentSwipe, speed * -1), ForceMode2D.Impulse);
             Vector2 _velocity = currentSwipe * speed;
-            topRigid.velocity = _velocity * -1;
+            topRigid.linearVelocity = _velocity * -1;
             istaka.transform.parent = null;
             //joint.enabled = false;
 
@@ -159,7 +159,7 @@ public class BasicTake : MonoBehaviour
 
         float timestep = Time.fixedDeltaTime / Physics2D.velocityIterations;
         Vector2 gravityAccel = Physics2D.gravity * rigidbody.gravityScale * timestep * timestep;
-        float drag = 1f - timestep * rigidbody.drag;
+        float drag = 1f - timestep * rigidbody.linearDamping;
         Vector2 moveStep = velocity * timestep;
 
         for (int i = 0; i < steps; i++)

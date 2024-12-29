@@ -119,11 +119,11 @@ public class BasicTouchMove : MonoBehaviour
             //}
             if (_velocity.magnitude>=maxSwipeLength)
             {
-                topRigid.velocity = new Vector2(_velocity.x * -0.5f, 0);
+                topRigid.linearVelocity = new Vector2(_velocity.x * -0.5f, 0);
             }
             else 
            
-                topRigid.velocity = _velocity * -1;
+                topRigid.linearVelocity = _velocity * -1;
             
 
             if (flame != null&&yerde==true)
@@ -193,7 +193,7 @@ public class BasicTouchMove : MonoBehaviour
 
         float timestep = Time.fixedDeltaTime / Physics2D.velocityIterations;
         Vector2 gravityAccel = Physics2D.gravity * rigidbody.gravityScale * timestep * timestep;
-        float drag = 1f - timestep * rigidbody.drag;
+        float drag = 1f - timestep * rigidbody.linearDamping;
         Vector2 moveStep = velocity * timestep;
       
         for (int i = 0; i < steps; i++)
